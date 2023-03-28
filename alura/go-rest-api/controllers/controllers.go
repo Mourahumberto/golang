@@ -28,6 +28,18 @@ func RetornaUmaPersonalidade(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(personalidade)
 }
 
+func RetornaUmaPersonalidadeName(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	nome := vars["nome"]
+	nome2 := "%" + nome + "%"
+	println(nome2)
+	var personalidade models.Personalidade
+	fmt.Println(vars)
+	database.DB.Where("nome LIKE ?", nome2).Find(&personalidade)
+	fmt.Println(personalidade)
+	json.NewEncoder(w).Encode(personalidade)
+}
+
 func CriaUmaNovaPersonalidade(w http.ResponseWriter, r *http.Request) {
 	var novaPersonalidade models.Personalidade
 	json.NewDecoder(r.Body).Decode(&novaPersonalidade)

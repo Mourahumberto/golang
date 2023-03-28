@@ -10,9 +10,9 @@ type usuario struct {
 }
 
 type usuario2 struct {
-	nome     string
-	idade    int
-	endereco endereco
+	nome    string
+	idade   int
+	enderec endereco
 }
 
 type endereco struct {
@@ -44,8 +44,8 @@ func main() {
 	var u5 usuario2
 	u5.nome = "Humberto"
 	u5.idade = 28
-	u5.endereco.rua = " WL12"
-	u5.endereco.casa = 11
+	u5.enderec.rua = " WL12"
+	u5.enderec.casa = 11
 
 	fmt.Println(u5)
 }

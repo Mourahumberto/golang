@@ -27,4 +27,7 @@ func main() {
 	slice1[3] = 9
 	fmt.Println(slice1)
 
+	slice1 = slice1[1]
+	fmt.Println(slice1)
+
 }
