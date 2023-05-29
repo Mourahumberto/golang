@@ -11,6 +11,7 @@ type circulo struct {
 	raio float64
 }
 
+// vai servir para o escrever área conseguir retornar as duas funções
 type forma interface {
 	area() float64
 }
