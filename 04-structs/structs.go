@@ -44,7 +44,7 @@ func main() {
 	var u5 usuario2
 	u5.nome = "Humberto"
 	u5.idade = 28
-	u5.enderec.rua = " WL12"
+	u5.enderec.rua = "WL12"
 	u5.enderec.casa = 11
 
 	fmt.Println(u5)

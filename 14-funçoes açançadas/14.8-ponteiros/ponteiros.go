@@ -10,6 +10,7 @@ func dobraPonteiro(numero *int) {
 	*numero = *numero * 2
 }
 func main() {
+	// aqui o numero continua o mesmo
 	numero := 20
 	numeroDobrado := dobra(numero)
 	fmt.Println(numeroDobrado)

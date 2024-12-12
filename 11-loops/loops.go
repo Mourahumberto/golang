@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
@@ -34,5 +35,22 @@ func main() {
 	for indice, letra := range "PALAVRA" {
 		fmt.Println(indice, string(letra))
 	}
+	slice1 := []int{1, 2, 3, 4, 5, 6, 7, 8}
+	for indice, num := range slice1 {
+		fmt.Println(indice, string(num))
+	}
 
+	usuario := map[string]string{
+		"nome":      "neto",
+		"sobrenome": "moura",
+	}
+
+	for chave, valor := range usuario {
+		fmt.Println("chave:", chave, "valor:", valor)
+	}
+	// looop infinito
+	for {
+		fmt.Println("loop infinito")
+		time.Sleep(time.Second)
+	}
 }

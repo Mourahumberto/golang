@@ -49,6 +49,11 @@ import (
 	escrever2()
 ```
 
+### 2.2 baixando novosw pacotes para importar
+$ go get https://github.com/badoux/checkmail
+- e depois importa no código
+- se os modulos não são referenciado só dar um "go mod tidy" que irá tirar os módulos não usados do go.mod
+
 ## 3 - Variáveis
 - Exemplo: 02-variaveis
 

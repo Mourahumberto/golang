@@ -1,0 +1,4 @@
+- $ go mod init loja
+- $ go get -u github.com/gofiber/fiber/v3
+- $ go get -u gorm.io/gorm
+- $ go get -u gorm.io/driver/mysq

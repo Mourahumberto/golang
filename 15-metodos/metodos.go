@@ -7,6 +7,9 @@ type usuario struct {
 	idade uint8
 }
 
+// isso é como criamos um método para nossa struc. nesse caso quer dizer que todos os usuários tem o método salvar()
+// func (u usuario) salvar() {}
+
 func (u usuario) salvar() {
 	fmt.Printf("salvando os dados do usuário %s no banco \n", u.nome)
 }
@@ -15,6 +18,8 @@ func (u usuario) maiorDeIdade() bool {
 	return u.idade >= 18
 }
 
+// precisamos passar o ponteiro, se não ele cria uma cópia e não salva o valor do que foi passado.
+// Então se for preciso alterar um valor é necessário um ponteiro.
 func (u *usuario) fazerAniversario() {
 	u.idade++
 }

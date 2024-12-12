@@ -1,0 +1,4 @@
+- primeiro usaremos o framework: https://github.com/gofiber/fiber
+- usaremos o conector do banco de dados: https://gorm.io/docs/connecting_to_the_database.html#MySQL
+- para encryptar a senha: golang.org/x/crypto/bcrypt
+- para trabalhar com token iremos usar o jwt: jwt.io lib github.com/golang-jwt/jwt/v5

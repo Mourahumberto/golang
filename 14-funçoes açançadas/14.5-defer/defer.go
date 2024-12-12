@@ -27,6 +27,7 @@ func alunoAprovado(n1, n2 int) bool {
 func main() {
 	funcao1()
 	// tem a função de adiar a função até o ultimo momento.
+	// ele adia a função, mas ele executa antes do return
 	defer funcao2()
 	funcao3()
 	alunoAprovado(7, 8)

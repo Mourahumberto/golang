@@ -11,5 +11,8 @@ func main() {
 	fmt.Println("Escrevendo do main")
 	auxiliar.Escrever()
 	erro := checkmail.ValidateFormat("neto@gmail.com")
-	fmt.Println(erro)
+	if erro == nil {
+		fmt.Println("Sem error")
+	}
+
 }

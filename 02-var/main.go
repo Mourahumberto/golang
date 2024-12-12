@@ -3,5 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello World")
+	var nome string = "humberto"
+	var nome2 = "Humberto"
+	nome3 := "Neto"
+	fmt.Println("Hello World", nome, nome2, nome3)
 }

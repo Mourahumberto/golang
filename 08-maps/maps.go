@@ -10,5 +10,10 @@ func main() {
 		"sobrenome": "silva",
 		//"idade":	 23 // não daria certo pois a idade estã como int e o map só aceita tudo string ou tudo int ou outro tipo, porém tudo o mesmo.
 	}
+	fmt.Println(usuario)
 	fmt.Println(usuario["nome"])
+	delete(usuario, "nome")
+	fmt.Println(usuario)
+	usuario["signo"] = "cancer"
+	fmt.Println(usuario)
 }

@@ -61,7 +61,7 @@ func leComando() int {
 func iniciarMonitoracao() {
 	fmt.Println("Monitorando")
 	sites := leSitesDoArquivo()
-	for i := 0; i < 5; i++ {
+	for i := 0; i < 2; i++ {
 		for _, site := range sites { // comando range faz uma leitura em todos os valores do array
 			resp, _ := http.Get(site)
 			if resp.StatusCode == 200 {
@@ -72,7 +72,7 @@ func iniciarMonitoracao() {
 				registraLog(site, false)
 			}
 		}
-		time.Sleep(10 * time.Second)
+		time.Sleep(2 * time.Second)
 	}
 }
 

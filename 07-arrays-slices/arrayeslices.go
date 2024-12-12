@@ -17,9 +17,8 @@ func main() {
 	// Slice só pode ter dados do mesmo tipo. Poém podemos usar um tamanho variável
 
 	slice1 := []int{1, 2, 3, 4, 5, 6, 7, 8}
-	var slice2 []int
-	slice2 = append(slice2, 1)
-	slice2 = append(slice2, 2)
+	// var slice2 []int
+	slice2 := append(slice1, 9)
 
 	fmt.Println(slice1)
 	fmt.Println(slice2)
@@ -27,7 +26,7 @@ func main() {
 	slice1[3] = 9
 	fmt.Println(slice1)
 
-	slice1 = slice1[1]
-	fmt.Println(slice1)
-
+	// pegando partes do slice
+	slice3 := slice1[3:6]
+	fmt.Println(slice3)
 }
